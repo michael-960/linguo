@@ -1,17 +1,22 @@
 package com.fieryslug;
 
 
+import com.fieryslug.panel.PanelMain;
 import com.fieryslug.panel.PanelMenu;
 import com.fieryslug.panel.PanelRoot;
+import com.fieryslug.util.FuncBox;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.IOException;
 
 public class MainFrame extends JFrame {
 
-    private PanelRoot panelMenu;
+    private PanelMenu panelMenu;
+    private PanelMain panelMain;
 
 	public MainFrame() {
 
@@ -30,8 +35,18 @@ public class MainFrame extends JFrame {
 	private void initPanels() {
 
 	    this.panelMenu = new PanelMenu();
+	    this.panelMain = new PanelMain();
 
-	    this.add(this.panelMenu);
+	    this.getContentPane().add(this.panelMenu);
+
+	    this.panelMenu.buttonStart.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+
+                FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelMenu, MainFrame.this.panelMain);
+
+            }
+        });
 
     }
 
@@ -42,7 +57,7 @@ public class MainFrame extends JFrame {
 
             image = ImageIO.read(this.getClass().getResource("/com/fieryslug/resource/icon.png"));
 
-        } catch (IOException ioe) {
+        } catch (IOException e) {
         }
 	    this.setIconImage(image);
 

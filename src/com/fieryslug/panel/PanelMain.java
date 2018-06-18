@@ -1,4 +1,16 @@
 package com.fieryslug.panel;
 
-public class PanelMain {
+import java.awt.*;
+
+public class PanelMain extends PanelRoot {
+
+    public PanelMain() {
+
+        super();
+
+
+    }
+
+
+
 }

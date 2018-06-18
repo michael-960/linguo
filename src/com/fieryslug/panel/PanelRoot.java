@@ -13,12 +13,12 @@ public abstract class PanelRoot extends JPanel {
 
     }
 
-    public void start() {
+    public void enter() {
 
 
     }
 
-    public void end() {
+    public void exit() {
 
 
     }
