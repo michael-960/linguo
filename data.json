@@ -1,0 +1,68 @@
+[
+    {
+        "topic": "czech",
+        "groups": [{
+            "decks": [
+                {
+                    "name": "verb1",
+                    "cartas": [
+                        {
+                            "match": "to thank",
+                            "description": "dekovat"
+                        },
+                        {
+                            "match": "I thank",
+                            "description": "dekuju"
+                        }
+                    ]
+                },
+                {
+                    "name": "verb2",
+                    "cartas": [
+                        {
+                            "match": "to need",
+                            "description": "potrebovat"
+                        },
+                        {
+                            "match": "We need",
+                            "description": "potřebujeme"
+                        }
+                    ]
+                }
+            ],
+            "title": "verb"
+        }]
+    },
+    {
+        "topic": "chemistry",
+        "groups": [{
+            "decks": [{
+                "name": "nonmetal",
+                "cartas": [{
+                    "match": "OH-",
+                    "description": "H2O"
+                }]
+            }],
+            "title": "oxi"
+        }]
+    },
+    {
+        "topic": "inglés",
+        "groups": [{
+            "decks": [{
+                "name": "vocab1",
+                "cartas": [
+                    {
+                        "match": "顫抖",
+                        "description": "quiver"
+                    },
+                    {
+                        "match": "蛞蝓",
+                        "description": "slug"
+                    }
+                ]
+            }],
+            "title": "U3"
+        }]
+    }
+]

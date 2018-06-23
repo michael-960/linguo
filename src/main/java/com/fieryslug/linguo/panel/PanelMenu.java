@@ -1,4 +1,4 @@
-package com.fieryslug.panel;
+package com.fieryslug.linguo.panel;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -33,7 +33,7 @@ public class PanelMenu extends PanelRoot {
         Image image = null;
         try {
 
-            image = ImageIO.read(this.getClass().getResource("/com/fieryslug/resource/button1.png"));
+            image = ImageIO.read(this.getClass().getResource("/res/button1.png"));
 
         } catch (IOException e) {
 

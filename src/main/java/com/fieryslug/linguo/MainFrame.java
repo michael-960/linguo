@@ -1,10 +1,9 @@
-package com.fieryslug;
+package com.fieryslug.linguo;
 
 
-import com.fieryslug.panel.PanelMain;
-import com.fieryslug.panel.PanelMenu;
-import com.fieryslug.panel.PanelRoot;
-import com.fieryslug.util.FuncBox;
+import com.fieryslug.linguo.panel.PanelMain;
+import com.fieryslug.linguo.panel.PanelMenu;
+import com.fieryslug.linguo.util.FuncBox;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -55,7 +54,7 @@ public class MainFrame extends JFrame {
 	    Image image = null;
 	    try {
 
-            image = ImageIO.read(this.getClass().getResource("/com/fieryslug/resource/icon.png"));
+            image = ImageIO.read(this.getClass().getResource("/res/icon.png"));
 
         } catch (IOException e) {
         }

@@ -1,4 +1,4 @@
-package com.fieryslug.panel;
+package com.fieryslug.linguo.panel;
 
 
 import javax.swing.*;
