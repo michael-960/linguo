@@ -1,68 +1,138 @@
 [
     {
-        "topic": "czech",
-        "groups": [{
-            "decks": [
-                {
-                    "name": "verb1",
-                    "cartas": [
-                        {
-                            "match": "to thank",
-                            "description": "dekovat"
-                        },
-                        {
-                            "match": "I thank",
-                            "description": "dekuju"
-                        }
-                    ]
-                },
-                {
-                    "name": "verb2",
-                    "cartas": [
-                        {
-                            "match": "to need",
-                            "description": "potrebovat"
-                        },
-                        {
-                            "match": "We need",
-                            "description": "potřebujeme"
-                        }
-                    ]
-                }
-            ],
-            "title": "verb"
-        }]
-    },
-    {
-        "topic": "chemistry",
+        "topic": "Czech",
         "groups": [{
             "decks": [{
-                "name": "nonmetal",
-                "cartas": [{
-                    "match": "OH-",
-                    "description": "H2O"
-                }]
-            }],
-            "title": "oxi"
-        }]
-    },
-    {
-        "topic": "inglés",
-        "groups": [{
-            "decks": [{
-                "name": "vocab1",
+                "name": "m.a.-pán",
                 "cartas": [
                     {
-                        "match": "顫抖",
-                        "description": "quiver"
+                        "match": "pán",
+                        "description": "pán (nom. sg.)"
                     },
                     {
-                        "match": "蛞蝓",
-                        "description": "slug"
+                        "match": "pána",
+                        "description": "pán (gen. sg.)"
+                    },
+                    {
+                        "match": "pánovi",
+                        "description": "pán (dat. sg.)"
+                    },
+                    {
+                        "match": "pána",
+                        "description": "pán (acc. sg.)"
+                    },
+                    {
+                        "match": "páne!",
+                        "description": "pán (voc. sg.)"
+                    },
+                    {
+                        "match": "pánovi",
+                        "description": "pán (loc. sg.)"
+                    },
+                    {
+                        "match": "pánem",
+                        "description": "pán (ins. sg.)"
+                    },
+                    {
+                        "match": "gentleman",
+                        "description": "pán"
                     }
                 ]
             }],
-            "title": "U3"
+            "title": "declension"
         }]
+    },
+    {
+        "topic": "Lit",
+        "groups": [
+            {
+                "decks": [{
+                    "name": "流變",
+                    "cartas": [
+                        {
+                            "match": "高古悽怨 具藝術價值",
+                            "description": "盛唐"
+                        },
+                        {
+                            "match": "菩薩蠻 憶秦娥",
+                            "description": "盛唐 - 李白"
+                        },
+                        {
+                            "match": "百代詞曲之祖",
+                            "description": "李白被譽為__"
+                        },
+                        {
+                            "match": "胡曲 里巷 具音樂效能",
+                            "description": "中唐"
+                        },
+                        {
+                            "match": "中唐",
+                            "description": "韋應物年代"
+                        },
+                        {
+                            "match": "中唐",
+                            "description": "白居易年代"
+                        },
+                        {
+                            "match": "中唐",
+                            "description": "劉禹錫年代"
+                        },
+                        {
+                            "match": "中唐",
+                            "description": "張志和年代"
+                        },
+                        {
+                            "match": "花間鼻祖",
+                            "description": "溫庭筠被稱為__"
+                        },
+                        {
+                            "match": "花間詞 帝王詞",
+                            "description": "晚唐五代詞分為"
+                        },
+                        {
+                            "match": "花間餘風",
+                            "description": "北宋初詞的風格？"
+                        }
+                    ]
+                }],
+                "title": "詞"
+            },
+            {
+                "decks": [{
+                    "name": "B4 final",
+                    "cartas": [
+                        {
+                            "match": "ㄒ一ˋ",
+                            "description": "字音 - 脩\"褉\""
+                        },
+                        {
+                            "match": "ㄑ一ˋ",
+                            "description": "字音 - 若合一\"契\""
+                        },
+                        {
+                            "match": "ㄑ一ㄝˋ",
+                            "description": "字音 - \"鍥\"而不捨"
+                        },
+                        {
+                            "match": "ㄒ一ㄝ",
+                            "description": "字音 - 木\"楔\" \"楔\"子 \"楔\"形文字"
+                        },
+                        {
+                            "match": "ㄔ",
+                            "description": "字音 - \"喫\"茶 \"喫\"酒 \"喫\"著不盡"
+                        },
+                        {
+                            "match": "ㄑ一ㄝˋ",
+                            "description": "字音 - \"挈\"中了個相公 提綱\"挈\"領"
+                        },
+                        {
+                            "match": "ㄒ一ㄝˊ",
+                            "description": "字音 - 度長\"絜\"大"
+                        }
+                    ]
+                }],
+                "title": "字音字形"
+            }
+        ]
     }
 ]

@@ -1,11 +1,13 @@
 package com.fieryslug.linguo.panel;
 
-import javax.imageio.ImageIO;
+import com.fieryslug.linguo.MainFrame;
+import com.fieryslug.linguo.util.FuncBox;
+import com.fieryslug.linguo.util.Reference;
+
 import javax.swing.*;
 import java.awt.*;
-import java.io.IOException;
 
-public class PanelMenu extends PanelRoot {
+public class PanelMenu extends PanelGnome {
 
     public JButton buttonStart;
 
@@ -18,35 +20,31 @@ public class PanelMenu extends PanelRoot {
     }
 
     @Override
-    public void enter() {
-        super.enter();
+    public void enter(MainFrame frame) {
+
+        this.removeAll();
+
+        this.panelInterior.add(this.buttonStart);
+        this.add(this.panelInterior);
+        this.add(FuncBox.createBlankLabel(4000, 1));
     }
 
     @Override
-    public void exit() {
-        super.exit();
+    public void exit(MainFrame frame) {
+
     }
+
+
 
     private void initialize() {
 
-
-        Image image = null;
-        try {
-
-            image = ImageIO.read(this.getClass().getResource("/res/button1.png"));
-
-        } catch (IOException e) {
-
-        }
-
-        this.buttonStart = new JButton(new ImageIcon(image));
+        this.buttonStart = new JButton(new ImageIcon(Reference.BUTTON_START));
         this.buttonStart.setOpaque(false);
         this.buttonStart.setContentAreaFilled(false);
         this.buttonStart.setBorderPainted(false);
         this.buttonStart.setFocusPainted(false);
 
-        this.add(this.buttonStart);
-
     }
+
 
 }

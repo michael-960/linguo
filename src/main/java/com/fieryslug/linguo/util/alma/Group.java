@@ -2,7 +2,7 @@ package com.fieryslug.linguo.util.alma;
 
 import java.util.ArrayList;
 
-public class Group {
+public class Group implements IWithName {
 
     public String title;
     public ArrayList<Deck> decks;
@@ -16,6 +16,8 @@ public class Group {
         this.decks = decks;
     }
 
-
-
+    @Override
+    public String getName() {
+        return this.title;
+    }
 }

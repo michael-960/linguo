@@ -1,6 +1,8 @@
 package com.fieryslug.linguo.panel;
 
 
+import com.fieryslug.linguo.MainFrame;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -13,12 +15,12 @@ public abstract class PanelRoot extends JPanel {
 
     }
 
-    public void enter() {
+    public void enter(MainFrame frame) {
 
 
     }
 
-    public void exit() {
+    public void exit(MainFrame frame) {
 
 
     }

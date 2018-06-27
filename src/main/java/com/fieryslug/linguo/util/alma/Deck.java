@@ -2,7 +2,7 @@ package com.fieryslug.linguo.util.alma;
 
 import java.util.ArrayList;
 
-public class Deck {
+public class Deck implements IWithName {
 
     public String name;
     public ArrayList<Carta> cartas;
@@ -18,4 +18,8 @@ public class Deck {
 
     }
 
+    @Override
+    public String getName() {
+        return this.name;
+    }
 }

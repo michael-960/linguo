@@ -1,6 +1,6 @@
 package com.fieryslug.linguo.util.alma;
 
-public class Carta {
+public class Carta implements IWithName {
 
     public String description;
     public String match;
@@ -18,9 +18,12 @@ public class Carta {
 
     public boolean compare(String match1) {
 
-        return this.match == match1;
+        return this.match.equals(match1);
 
     }
 
-
+    @Override
+    public String getName() {
+        return this.description;
+    }
 }
