@@ -26,6 +26,8 @@ public class MainFrame extends JFrame {
     public PanelCartas panelCartas;
     public PanelEditCarta panelEditCarta;
 
+    public PanelMaster panelMaster;
+
     public MainFrame() {
 
 	    this.setBounds(400, 150, 1400, 1000);
@@ -55,6 +57,8 @@ public class MainFrame extends JFrame {
 	    this.panelCartas = new PanelCartas();
 	    this.panelEditCarta = new PanelEditCarta();
 
+	    this.panelMaster = new PanelMaster();
+
 	    this.getContentPane().add(this.panelMenu);
 	    this.panelMenu.enter(this);
 
@@ -69,8 +73,9 @@ public class MainFrame extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent actionEvent) {
 
-				FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelMenu, MainFrame.this.panelTopics);
-
+				//FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelMenu, MainFrame.this.panelTopics);
+                panelMaster.setIndices(-1, -1, -1, -1);
+                FuncBox.switchPanel(MainFrame.this, panelMenu, panelMaster);
 			}
 		});
 
@@ -193,7 +198,7 @@ public class MainFrame extends JFrame {
         this.panelGame.buttonBack.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelGame, MainFrame.this.panelDecks);
+                FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelGame, MainFrame.this.panelMaster);
             }
         });
 
@@ -203,7 +208,8 @@ public class MainFrame extends JFrame {
             public void actionPerformed(ActionEvent actionEvent) {
 
             	MainFrame.this.panelAdd.saveAndExit();
-            	FuncBox.switchFromPanelAdd(MainFrame.this);
+            	//FuncBox.switchFromPanelAdd(MainFrame.this);
+                FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelAdd, MainFrame.this.panelMaster);
             }
         });
 
@@ -211,9 +217,11 @@ public class MainFrame extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent actionEvent) {
 
-			    FuncBox.switchFromPanelAdd(MainFrame.this);
+			    //FuncBox.switchFromPanelAdd(MainFrame.this);
+                FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelAdd, MainFrame.this.panelMaster);
 
-			}
+
+            }
 		});
 
         //panelRemove
@@ -222,7 +230,9 @@ public class MainFrame extends JFrame {
             public void actionPerformed(ActionEvent actionEvent) {
 
                 MainFrame.this.panelRemove.saveAndExit();
-                FuncBox.switchFromPanelRemove(MainFrame.this);
+                //FuncBox.switchFromPanelRemove(MainFrame.this);
+                FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelRemove, MainFrame.this.panelMaster);
+
 
             }
         });
@@ -230,7 +240,9 @@ public class MainFrame extends JFrame {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
 
-                FuncBox.switchFromPanelRemove(MainFrame.this);
+                //FuncBox.switchFromPanelRemove(MainFrame.this);
+                FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelRemove, MainFrame.this.panelMaster);
+
 
             }
         });
@@ -241,7 +253,8 @@ public class MainFrame extends JFrame {
             public void actionPerformed(ActionEvent actionEvent) {
 
                 MainFrame.this.panelEditCarta.saveAndExit();
-                FuncBox.switchFromPanel(MainFrame.this, MainFrame.this.panelEditCarta);
+                //FuncBox.switchFromPanel(MainFrame.this, MainFrame.this.panelEditCarta);
+                FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelEditCarta, MainFrame.this.panelMaster);
 
             }
         });
@@ -249,8 +262,47 @@ public class MainFrame extends JFrame {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
 
-                FuncBox.switchFromPanel(MainFrame.this, MainFrame.this.panelEditCarta);
+                //FuncBox.switchFromPanel(MainFrame.this, MainFrame.this.panelEditCarta);
+                FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelEditCarta, MainFrame.this.panelMaster);
 
+            }
+        });
+
+        //panelMaster
+        panelMaster.buttonBack.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                if(panelMaster.getIndexT() == -1) {
+
+                }
+                else if(panelMaster.getIndexG() == -1) {
+                    panelMaster.setIndices(-1, -1, -1, -1);
+                    FuncBox.switchPanel(MainFrame.this, panelMaster, panelMaster);
+                }
+                else if(panelMaster.getIndexD() == -1) {
+                    panelMaster.setIndices(panelMaster.getIndexT(), -1, -1, -1);
+                    FuncBox.switchPanel(MainFrame.this, panelMaster, panelMaster);
+                }
+                else if(panelMaster.getIndexC() == -1) {
+                    panelMaster.setIndices(panelMaster.getIndexT(), panelMaster.getIndexG(), -1, -1);
+                    FuncBox.switchPanel(MainFrame.this, panelMaster, panelMaster);
+                }
+            }
+        });
+
+        panelMaster.buttonAdd.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                MainFrame.this.panelAdd.setParameters(panelMaster.getIndexT(), panelMaster.getIndexG(), panelMaster.getIndexD());
+                FuncBox.switchPanel(MainFrame.this, panelMaster, MainFrame.this.panelAdd);
+            }
+        });
+
+        panelMaster.buttonRemove.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                MainFrame.this.panelRemove.setParameters(panelMaster.getIndexT(), panelMaster.getIndexG(), panelMaster.getIndexD());
+                FuncBox.switchPanel(MainFrame.this, panelMaster, MainFrame.this.panelRemove);
             }
         });
 
@@ -284,19 +336,25 @@ public class MainFrame extends JFrame {
         this.panelGame.labelToRoot.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent mouseEvent) {
-                FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelGame, MainFrame.this.panelTopics);
+                //FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelGame, MainFrame.this.panelTopics);
+                MainFrame.this.panelMaster.setIndices(-1, -1, -1, -1);
+                FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelGame, MainFrame.this.panelMaster);
             }
         });
         this.panelGame.labelToTopic.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent mouseEvent) {
-                FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelGame, MainFrame.this.panelGroups);
+                //FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelGame, MainFrame.this.panelGroups);
+                MainFrame.this.panelMaster.setIndices(panelMaster.getIndexT(), -1, -1, -1);
+                FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelGame, MainFrame.this.panelMaster);
             }
         });
         this.panelGame.labelToGroup.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent mouseEvent) {
-                FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelGame, MainFrame.this.panelDecks);
+                //FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelGame, MainFrame.this.panelDecks);
+                MainFrame.this.panelMaster.setIndices(panelMaster.getIndexT(), panelMaster.getIndexG(), -1, -1);
+                FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelGame, MainFrame.this.panelMaster);
             }
         });
 
@@ -325,6 +383,8 @@ public class MainFrame extends JFrame {
                 FuncBox.switchPanel(MainFrame.this, MainFrame.this.panelGame, MainFrame.this.panelCartas);
             }
         });
+
+        this.panelMaster.linkLabels(this);
 
     }
 

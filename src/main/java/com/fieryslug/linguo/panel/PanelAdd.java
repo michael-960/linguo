@@ -9,6 +9,7 @@ import com.fieryslug.linguo.util.alma.Deck;
 import com.fieryslug.linguo.util.alma.Group;
 import com.fieryslug.linguo.util.alma.Topic;
 
+import javax.print.DocFlavor;
 import javax.swing.*;
 import javax.swing.text.Caret;
 import java.awt.*;
@@ -32,6 +33,9 @@ public class PanelAdd extends PanelGnome {
     public int indexT = -1;
     public int indexG = -1;
     public int indexD = -1;
+
+    private static final String ACTION_SAVE = "action-save";
+    private static final String ACTION_BACK = "action-back";
 
 
 
@@ -63,6 +67,9 @@ public class PanelAdd extends PanelGnome {
                 if(PanelAdd.this.indexD != -1) {
                     PanelAdd.this.fieldMatch.requestFocus();
                 }
+                else {
+                    buttonConfirm.doClick();
+                }
             }
         });
 
@@ -79,6 +86,12 @@ public class PanelAdd extends PanelGnome {
         this.fieldMatch.setBorder(BorderFactory.createEmptyBorder());
         this.fieldMatch.setForeground(Reference.GREEN);
         this.fieldMatch.setCaretColor(Reference.WHITE);
+        this.fieldMatch.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                buttonConfirm.doClick();
+            }
+        });
 
         this.buttonBack = new JButton();
         this.buttonBack.setIcon(new ImageIcon(Reference.BUTTON_BACK));
@@ -101,8 +114,25 @@ public class PanelAdd extends PanelGnome {
         this.panelInterior.add(FuncBox.createBlankLabel(4000, 20));
         this.panelInterior.add(this.fieldTopic);
 
+        this.fieldTopic.getInputMap().put(KeyStroke.getKeyStroke("ESCAPE"), ACTION_BACK);
+        this.fieldTopic.getActionMap().put(ACTION_BACK, new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                buttonBack.doClick();
+            }
+        });
+
+        this.fieldMatch.getInputMap().put(KeyStroke.getKeyStroke("ESCAPE"), ACTION_BACK);
+        this.fieldMatch.getActionMap().put(ACTION_BACK, new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                buttonBack.doClick();
+            }
+        });
+
         this.add(this.buttonBack);
         this.add(this.buttonConfirm);
+
 
     }
 

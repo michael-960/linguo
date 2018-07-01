@@ -39,6 +39,8 @@ public class PanelCartas extends PanelGnome {
     private Map<Carta, JButton> cartaButtonMap;
     private JPanel panelSide;
 
+    private static final String ACTION_ADD = "action-add";
+
     public PanelCartas() {
 
         this.initialize();
@@ -77,7 +79,6 @@ public class PanelCartas extends PanelGnome {
         this.labelToDeck.setPreferredSize(new Dimension(Reference.LABEL_LINK_WIDTH, Reference.LABEL_LINK_HEIGHT));
         this.labelToDeck.setupInteraction(Reference.MONOSPACED35, Reference.MONOSPACED40, Reference.PINK, Reference.ORANGE);
 
-
     }
 
     public void setParameters(int indexT, int indexG, int indexD) {
@@ -111,7 +112,6 @@ public class PanelCartas extends PanelGnome {
         this.labelToGroup.setText(group.title);
         this.labelToDeck.setText(deck.name);
 
-
         this.panelSide.add(this.labelToRoot);
         this.panelSide.add(this.labelToTopic);
         this.panelSide.add(this.labelToGroup);
@@ -122,6 +122,9 @@ public class PanelCartas extends PanelGnome {
         this.add(this.buttonBack);
         this.add(this.buttonAdd);
         this.add(this.buttonRemove);
+
+        InputMap inputMap = this.getInputMap();
+        ActionMap actionMap = this.getActionMap();
 
 
     }
@@ -136,7 +139,8 @@ public class PanelCartas extends PanelGnome {
             Carta carta = cartas.get(c);
             JButton button = this.cartaButtonMap.get(carta);
 
-            button.setFont(FuncBox.fontForMonospaceText(button.getText(), 225, 20, 70));
+            button.setFont(FuncBox.fontForMonospaceText(button.getText(), 225, 30, 70));
+            button.setText(FuncBox.htmlWithNewLines(button.getText(), button.getFont(), 225));
 
             final int indexC = c;
 

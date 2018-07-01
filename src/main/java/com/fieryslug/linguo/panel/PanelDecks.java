@@ -10,13 +10,11 @@ import com.fieryslug.linguo.util.alma.Group;
 import com.fieryslug.linguo.util.alma.Topic;
 import com.fieryslug.linguo.widget.LabelSlug;
 import layout.TableLayout;
+import sun.swing.SwingUtilities2;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -176,6 +174,14 @@ public class PanelDecks extends PanelRoot {
             JButton button = this.deckButtonMap.get(deck);
             final int indexD = d;
 
+            JLabel label = new JLabel("", SwingConstants.CENTER);
+            button.setLayout(new FlowLayout(FlowLayout.CENTER));
+            label.setPreferredSize(new Dimension(100, 150));
+            label.setFont(Reference.MONOSPACED55);
+            label.setForeground(new Color(151, 210, 207, 168));
+            label.setHorizontalTextPosition(SwingConstants.CENTER);
+            button.add(label);
+
             button.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent actionEvent) {
@@ -195,6 +201,23 @@ public class PanelDecks extends PanelRoot {
                         FuncBox.switchPanel(frame, frame.panelDecks, frame.panelCartas);
 
                     }
+                }
+            });
+
+            button.addMouseWheelListener(new MouseAdapter() {
+                @Override
+                public void mouseWheelMoved(MouseWheelEvent mouseWheelEvent) {
+                    int r = mouseWheelEvent.getWheelRotation();
+                    JLabel labeltemp = (JLabel)(button.getComponents()[0]);
+                    int c = Integer.valueOf(button.getText());
+                    if(r == -1) {
+                        c += 1;
+                    }
+                    else {
+                        c = Math.max(1, c-1);
+                    }
+                    labeltemp.setText(String.valueOf(c));
+
                 }
             });
 

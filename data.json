@@ -2,43 +2,114 @@
     {
         "topic": "Czech",
         "groups": [{
-            "decks": [{
-                "name": "m.a.-pán",
-                "cartas": [
-                    {
-                        "match": "pán",
-                        "description": "pán (nom. sg.)"
-                    },
-                    {
-                        "match": "pána",
-                        "description": "pán (gen. sg.)"
-                    },
-                    {
-                        "match": "pánovi",
-                        "description": "pán (dat. sg.)"
-                    },
-                    {
-                        "match": "pána",
-                        "description": "pán (acc. sg.)"
-                    },
-                    {
-                        "match": "páne!",
-                        "description": "pán (voc. sg.)"
-                    },
-                    {
-                        "match": "pánovi",
-                        "description": "pán (loc. sg.)"
-                    },
-                    {
-                        "match": "pánem",
-                        "description": "pán (ins. sg.)"
-                    },
-                    {
-                        "match": "gentleman",
-                        "description": "pán"
-                    }
-                ]
-            }],
+            "decks": [
+                {
+                    "name": "m.a.-pán",
+                    "cartas": [
+                        {
+                            "match": "pán",
+                            "description": "pán\n-singular\n-nominative"
+                        },
+                        {
+                            "match": "pána",
+                            "description": "pán\n-singular\n-genitive"
+                        },
+                        {
+                            "match": "pánovi",
+                            "description": "pán\n-singular\n-dative"
+                        },
+                        {
+                            "match": "pána",
+                            "description": "pán\n-singular\n-accusative"
+                        },
+                        {
+                            "match": "páne!",
+                            "description": "pán\n-singular\n-vocative"
+                        },
+                        {
+                            "match": "pánovi",
+                            "description": "pán\n-singular\n-locative"
+                        },
+                        {
+                            "match": "pánem",
+                            "description": "pán\n-singular\n-instrumental"
+                        },
+                        {
+                            "match": "páni",
+                            "description": "pán\n-plural\n-nominative"
+                        },
+                        {
+                            "match": "pánů",
+                            "description": "pán\n-plural\n-genitive"
+                        },
+                        {
+                            "match": "pánům",
+                            "description": "pán\n-plural\n-dative"
+                        },
+                        {
+                            "match": "pány",
+                            "description": "pán\n-plural\n-accusative"
+                        },
+                        {
+                            "match": "páni!",
+                            "description": "pán\n-plural\n-vocative"
+                        },
+                        {
+                            "match": "pánech",
+                            "description": "pán\n-plural\n-locative"
+                        },
+                        {
+                            "match": "pány",
+                            "description": "pán\n-plural\n-instrumental"
+                        },
+                        {
+                            "match": "gentleman",
+                            "description": "pán"
+                        }
+                    ]
+                },
+                {
+                    "name": "mladý",
+                    "cartas": [
+                        {
+                            "match": "mladý",
+                            "description": "mladý\n-masculine animate\n-singular\n-nominative"
+                        },
+                        {
+                            "match": "mladý",
+                            "description": "mladý\n-masculine inanimate\n-singular\n-nominative"
+                        },
+                        {
+                            "match": "mladá",
+                            "description": "mladý\n-feminine\n-singular\n-nominative"
+                        },
+                        {
+                            "match": "mladé",
+                            "description": "mladý\n-neuter\n-singular\n-nominative"
+                        },
+                        {
+                            "match": "mladého",
+                            "description": "mladý\n\t-masculine animate\n-singular\n-genitive"
+                        },
+                        {
+                            "match": "mladého",
+                            "description": "mladý\n-masculine inanimate\n-singular\n-genitive"
+                        },
+                        {
+                            "match": "mladé",
+                            "description": "mladý\n-feminine\n-singular\n-genitive"
+                        },
+                        {
+                            "match": "mladého",
+                            "description": "mladý\n-neuter\n-singular\n-genitive"
+                        },
+                        {
+                            "match": "hello",
+                            "description": "hello"
+                        }
+                    ]
+                }
+            ],
             "title": "declension"
         }]
     },
@@ -134,5 +205,637 @@
                 "title": "字音字形"
             }
         ]
+    },
+    {
+        "topic": "español",
+        "groups": [
+            {
+                "decks": [{
+                    "name": "deck1",
+                    "cartas": [
+                        {
+                            "match": "el inodoro",
+                            "description": "toilet"
+                        },
+                        {
+                            "match": "el armario",
+                            "description": "closet"
+                        },
+                        {
+                            "match": "el acondicionador de aire",
+                            "description": "air conditioner"
+                        }
+                    ]
+                }],
+                "title": "household"
+            },
+            {
+                "decks": [{
+                    "name": "deck1",
+                    "cartas": [
+                        {
+                            "match": "las pestañas",
+                            "description": "eyelashes"
+                        },
+                        {
+                            "match": "las cejas",
+                            "description": "eyebrows"
+                        },
+                        {
+                            "match": "las fosas nasales",
+                            "description": "nostrils"
+                        },
+                        {
+                            "match": "las entrañas",
+                            "description": "guts"
+                        },
+                        {
+                            "match": "la vena",
+                            "description": "vein"
+                        },
+                        {
+                            "match": "la uña",
+                            "description": "fingernail"
+                        },
+                        {
+                            "match": "la cutícula",
+                            "description": "cuticle"
+                        },
+                        {
+                            "match": "los poros",
+                            "description": "pores"
+                        },
+                        {
+                            "match": "la pantorrilla",
+                            "description": "calf"
+                        },
+                        {
+                            "match": "el muslo",
+                            "description": "thigh"
+                        },
+                        {
+                            "match": "el hueso",
+                            "description": "bone"
+                        },
+                        {
+                            "match": "el pulgar",
+                            "description": "thumb"
+                        },
+                        {
+                            "match": "la mejilla",
+                            "description": "cheek"
+                        },
+                        {
+                            "match": "la rótula",
+                            "description": "kneecap"
+                        },
+                        {
+                            "match": "el talón",
+                            "description": "heel"
+                        }
+                    ]
+                }],
+                "title": "body parts"
+            },
+            {
+                "decks": [{
+                    "name": "deck1",
+                    "cartas": [
+                        {
+                            "match": "la cabra",
+                            "description": "goat"
+                        },
+                        {
+                            "match": "el zorro",
+                            "description": "fox"
+                        },
+                        {
+                            "match": "el ganso",
+                            "description": "goose"
+                        },
+                        {
+                            "match": "el pato",
+                            "description": "duck"
+                        },
+                        {
+                            "match": "el bicho",
+                            "description": "bug"
+                        },
+                        {
+                            "match": "la abeja",
+                            "description": "bee"
+                        },
+                        {
+                            "match": "la libélula",
+                            "description": "dragonfly"
+                        },
+                        {
+                            "match": "la mariposa",
+                            "description": "butterfly"
+                        },
+                        {
+                            "match": "la mariquita",
+                            "description": "ladybug"
+                        },
+                        {
+                            "match": "la oruga",
+                            "description": "caterpillar"
+                        },
+                        {
+                            "match": "la luciérnaga",
+                            "description": "fierfly"
+                        },
+                        {
+                            "match": "el murciélago",
+                            "description": "bat"
+                        },
+                        {
+                            "match": "la ballena",
+                            "description": "whale"
+                        },
+                        {
+                            "match": "el delfín",
+                            "description": "dolphin"
+                        },
+                        {
+                            "match": "el tiburón",
+                            "description": "shark"
+                        },
+                        {
+                            "match": "el insecto",
+                            "description": "insect"
+                        },
+                        {
+                            "match": "la ligartija",
+                            "description": "lizard"
+                        },
+                        {
+                            "match": "el camello",
+                            "description": "camel"
+                        },
+                        {
+                            "match": "el cocodrilo",
+                            "description": "crocodile"
+                        },
+                        {
+                            "match": "el caimán",
+                            "description": "alligator"
+                        }
+                    ]
+                }],
+                "title": "animals"
+            },
+            {
+                "decks": [
+                    {
+                        "name": "europe",
+                        "cartas": [
+                            {
+                                "match": "Inglaterra",
+                                "description": "England"
+                            },
+                            {
+                                "match": "Países Bajos",
+                                "description": "Netherlands"
+                            },
+                            {
+                                "match": "Alemania",
+                                "description": "Germany"
+                            },
+                            {
+                                "match": "Francia",
+                                "description": "France"
+                            },
+                            {
+                                "match": "Portugal",
+                                "description": "Portugal"
+                            },
+                            {
+                                "match": "Grecia",
+                                "description": "Greece"
+                            },
+                            {
+                                "match": "Turquía",
+                                "description": "Turkey"
+                            },
+                            {
+                                "match": "Rusia",
+                                "description": "Russia"
+                            },
+                            {
+                                "match": "Suecia",
+                                "description": "Sweden"
+                            },
+                            {
+                                "match": "Noruega",
+                                "description": "Norway"
+                            },
+                            {
+                                "match": "Finlandia",
+                                "description": "Finland"
+                            },
+                            {
+                                "match": "República Checa",
+                                "description": "Czech Republic"
+                            },
+                            {
+                                "match": "Polonia",
+                                "description": "Poland"
+                            },
+                            {
+                                "match": "Estonia",
+                                "description": "Estonia"
+                            },
+                            {
+                                "match": "Ucrania",
+                                "description": "Ukraine"
+                            },
+                            {
+                                "match": "Rumania",
+                                "description": "Romania"
+                            },
+                            {
+                                "match": "Italia",
+                                "description": "Italy"
+                            },
+                            {
+                                "match": "España",
+                                "description": "Spain"
+                            },
+                            {
+                                "match": "Hungría",
+                                "description": "Hungary"
+                            },
+                            {
+                                "match": "Bulgaria",
+                                "description": "Bulgaria"
+                            },
+                            {
+                                "match": "Austria",
+                                "description": "Austria"
+                            },
+                            {
+                                "match": "Eslovenia",
+                                "description": "Slovenia"
+                            },
+                            {
+                                "match": "Eslovaquia",
+                                "description": "Slovakia"
+                            },
+                            {
+                                "match": "Suiza",
+                                "description": "Switzerland"
+                            },
+                            {
+                                "match": "Gales",
+                                "description": "Wales"
+                            },
+                            {
+                                "match": "Irlanda",
+                                "description": "Ireland"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "asia",
+                        "cartas": [
+                            {
+                                "match": "Taiwán",
+                                "description": "Taiwan"
+                            },
+                            {
+                                "match": "Tailandia",
+                                "description": "Thailand"
+                            },
+                            {
+                                "match": "Camboya",
+                                "description": "Cambodia"
+                            },
+                            {
+                                "match": "China",
+                                "description": "China"
+                            },
+                            {
+                                "match": "Japón",
+                                "description": "Japan"
+                            },
+                            {
+                                "match": "Corea",
+                                "description": "Korea"
+                            },
+                            {
+                                "match": "Singapur",
+                                "description": "Singapore"
+                            },
+                            {
+                                "match": "Malasia",
+                                "description": "Malaysia"
+                            },
+                            {
+                                "match": "Indonesia",
+                                "description": "Indonesia"
+                            },
+                            {
+                                "match": "India",
+                                "description": "India"
+                            },
+                            {
+                                "match": "Mongolia",
+                                "description": "Mongolia"
+                            },
+                            {
+                                "match": "Vietnam",
+                                "description": "Vietnam"
+                            },
+                            {
+                                "match": "Filipinas",
+                                "description": "Philippines"
+                            },
+                            {
+                                "match": "Bangla",
+                                "description": "Bangla"
+                            },
+                            {
+                                "match": "Arabia Saudita",
+                                "description": "Saudia Arabia"
+                            },
+                            {
+                                "match": "Irán",
+                                "description": "Iran"
+                            },
+                            {
+                                "match": "Irak",
+                                "description": "Iraq"
+                            },
+                            {
+                                "match": "Israel",
+                                "description": "Israel"
+                            },
+                            {
+                                "match": "Siria",
+                                "description": "Syria"
+                            },
+                            {
+                                "match": "Kazajistán",
+                                "description": "Kazakhstan"
+                            },
+                            {
+                                "match": "Sri Lanka",
+                                "description": "Sri Lanka"
+                            },
+                            {
+                                "match": "Nepal",
+                                "description": "Nepal"
+                            },
+                            {
+                                "match": "Pakistán",
+                                "description": "Pakistan"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "america",
+                        "cartas": [
+                            {
+                                "match": "Estados Unidos",
+                                "description": "United States"
+                            },
+                            {
+                                "match": "Canadá",
+                                "description": "Canada"
+                            },
+                            {
+                                "match": "México",
+                                "description": "Mexico"
+                            },
+                            {
+                                "match": "Venezuela",
+                                "description": "Venezuela"
+                            },
+                            {
+                                "match": "Perú",
+                                "description": "Peru"
+                            },
+                            {
+                                "match": "Brasil",
+                                "description": "Brazil"
+                            },
+                            {
+                                "match": "Chile",
+                                "description": "Chile"
+                            },
+                            {
+                                "match": "Puerto Rico",
+                                "description": "Puerto Rico"
+                            },
+                            {
+                                "match": "Costa Rica",
+                                "description": "Costa Rica"
+                            },
+                            {
+                                "match": "Argentina",
+                                "description": "Argentina"
+                            },
+                            {
+                                "match": "Bolivia",
+                                "description": "Bolivia"
+                            },
+                            {
+                                "match": "Paraguay",
+                                "description": "Paraguay"
+                            },
+                            {
+                                "match": "Uruguay",
+                                "description": "Uruguay"
+                            },
+                            {
+                                "match": "Colombia",
+                                "description": "Colombia"
+                            }
+                        ]
+                    }
+                ],
+                "title": "nations"
+            },
+            {
+                "decks": [
+                    {
+                        "name": "physics",
+                        "cartas": []
+                    },
+                    {
+                        "name": "chemistry",
+                        "cartas": []
+                    },
+                    {
+                        "name": "informatics",
+                        "cartas": []
+                    }
+                ],
+                "title": "science"
+            }
+        ]
+    },
+    {
+        "topic": "italiano",
+        "groups": [{
+            "decks": [{
+                "name": "porre",
+                "cartas": [
+                    {
+                        "match": "io pongo",
+                        "description": "I put"
+                    },
+                    {
+                        "match": "tu poni",
+                        "description": "you(sg.) put"
+                    },
+                    {
+                        "match": "lui pone",
+                        "description": "he puts"
+                    },
+                    {
+                        "match": "noi poniamo",
+                        "description": "we put"
+                    },
+                    {
+                        "match": "voi ponete",
+                        "description": "you(pl.) put"
+                    },
+                    {
+                        "match": "loro pongono",
+                        "description": "they put"
+                    },
+                    {
+                        "match": "porre",
+                        "description": "to put"
+                    },
+                    {
+                        "match": "io ponevo",
+                        "description": "I was putting"
+                    },
+                    {
+                        "match": "tu ponevi",
+                        "description": "you(sg.) were putting"
+                    },
+                    {
+                        "match": "lui poneva",
+                        "description": "he was putting"
+                    },
+                    {
+                        "match": "noi ponevamo",
+                        "description": "we were putting"
+                    },
+                    {
+                        "match": "voi ponevate",
+                        "description": "you(pl.) were putting"
+                    },
+                    {
+                        "match": "loro ponevano",
+                        "description": "they were putting"
+                    },
+                    {
+                        "match": "io porrò",
+                        "description": "I will put"
+                    },
+                    {
+                        "match": "tu porrai",
+                        "description": "you(sg.) will put"
+                    },
+                    {
+                        "match": "lui porrà",
+                        "description": "he will put"
+                    },
+                    {
+                        "match": "noi porremo",
+                        "description": "we will put"
+                    },
+                    {
+                        "match": "voi porrete",
+                        "description": "you(pl.) will put"
+                    },
+                    {
+                        "match": "loro porranno",
+                        "description": "they will put"
+                    }
+                ]
+            }],
+            "title": "verbi"
+        }]
+    },
+    {
+        "topic": "deutsch",
+        "groups": [{
+            "decks": [{
+                "name": "der",
+                "cartas": [
+                    {
+                        "match": "der",
+                        "description": "der\n-masculine\n-nominative"
+                    },
+                    {
+                        "match": "den",
+                        "description": "der\n-masculine\n-accusative"
+                    },
+                    {
+                        "match": "dem",
+                        "description": "der\n-masculine\n-dative"
+                    },
+                    {
+                        "match": "des",
+                        "description": "der\n-masculine\n-genitive"
+                    },
+                    {
+                        "match": "die",
+                        "description": "der\n-feminine\n-nominative"
+                    },
+                    {
+                        "match": "die",
+                        "description": "der\n-feminine\n-accusative"
+                    },
+                    {
+                        "match": "der",
+                        "description": "der\n-feminine\n-dative"
+                    },
+                    {
+                        "match": "der",
+                        "description": "der\n-feminine\n-genitive"
+                    },
+                    {
+                        "match": "das",
+                        "description": "der\n-neuter\n-nominative"
+                    },
+                    {
+                        "match": "das",
+                        "description": "der\n-neuter\n-accusative"
+                    },
+                    {
+                        "match": "dem",
+                        "description": "der\n-neuter\n-dative"
+                    },
+                    {
+                        "match": "des",
+                        "description": "der\n-neuter\n-genitive"
+                    },
+                    {
+                        "match": "die",
+                        "description": "der\n-plural\n-nominative"
+                    },
+                    {
+                        "match": "die",
+                        "description": "der\n-plural\n-accusative"
+                    },
+                    {
+                        "match": "den",
+                        "description": "der\n-plural\n-dative"
+                    },
+                    {
+                        "match": "der",
+                        "description": "der\n-plural\n-genitive"
+                    }
+                ]
+            }],
+            "title": "grammar"
+        }]
     }
 ]

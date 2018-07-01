@@ -33,6 +33,9 @@ public class PanelRemove extends PanelRoot {
     private Set<Integer> toRemove;
     private Map<Integer, JButton> intButtonMap;
 
+    private static final String ACTION_BACK = "action-back";
+    private static final String ACTION_CONFIRM = "action-confirm";
+
     public PanelRemove() {
 
         this.initialize();
@@ -46,6 +49,25 @@ public class PanelRemove extends PanelRoot {
 
         this.buttonBack = new ButtonSlug();
         this.buttonBack.setupIcons(Reference.BUTTON_BACK, Reference.BUTTON_BACK, Reference.BUTTON_BACK);
+
+        InputMap inputMap = this.getInputMap();
+        ActionMap actionMap = this.getActionMap();
+
+        inputMap.put(KeyStroke.getKeyStroke("ESCAPE"), ACTION_BACK);
+        inputMap.put(KeyStroke.getKeyStroke("ENTER"), ACTION_CONFIRM);
+        actionMap.put(ACTION_BACK, new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                buttonBack.doClick();
+            }
+        });
+        actionMap.put(ACTION_CONFIRM, new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                buttonConfirm.doClick();
+            }
+        });
+
     }
 
     public void setParameters(int indexT, int indexG, int indexD) {
@@ -89,6 +111,7 @@ public class PanelRemove extends PanelRoot {
         this.add(this.buttonBack);
         this.add(this.buttonConfirm);
 
+        this.requestFocus();
     }
 
     @Override
@@ -142,10 +165,10 @@ public class PanelRemove extends PanelRoot {
         for(int i : this.intButtonMap.keySet()) {
 
             ButtonSlug button = (ButtonSlug) this.intButtonMap.get(i);
+            button.setFont(FuncBox.fontForMonospaceText(button.getText(), 225, 30, 55));
 
-            if(this.indexD != -1) {
-                button.setFont(FuncBox.fontForMonospaceText(button.getText(), 225, 20, 60));
-            }
+
+            button.setFocusable(false);
 
             button.addActionListener(new ActionListener() {
                 @Override

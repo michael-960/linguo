@@ -1,14 +1,12 @@
 package com.fieryslug.linguo.util;
 
 import com.fieryslug.linguo.MainFrame;
-import com.fieryslug.linguo.panel.PanelRemove;
 import com.fieryslug.linguo.panel.PanelRoot;
 import com.fieryslug.linguo.util.alma.*;
 
 import javax.swing.*;
 import java.awt.*;
 import java.io.*;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -17,7 +15,6 @@ import java.util.Random;
 import com.fieryslug.linguo.widget.ButtonSlug;
 import layout.TableLayout;
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.IOUtils;
 import org.json.*;
 
 public class FuncBox {
@@ -361,7 +358,7 @@ public class FuncBox {
         StringBuilder str = new StringBuilder();
         int counter = 0;
 
-        str.append("<html>");
+        str.append("<html><center>");
 
         for(int i=0; i<text.length(); ++i) {
 
@@ -381,9 +378,62 @@ public class FuncBox {
 
         }
 
-        str.append("</html>");
+        str.append("</center></html>");
 
         return str.toString();
+
+    }
+
+    public static String htmlWithNewLines(String text, Font font, int maxWidthPerLine) {
+
+        int px = font.getSize();
+        StringBuilder str = new StringBuilder();
+        int width = 0;
+
+        str.append("<html><center>");
+
+        for(int i=0; i<text.length(); ++i) {
+
+            if(text.charAt(i) == '\n') {
+                str.append("<br>");
+                width = 0;
+            }
+            else {
+                if(width >= maxWidthPerLine) {
+                    str.append("<br>");
+                    width = 0;
+                }
+                str.append(text.charAt(i));
+                width += calcMonospacedWidth(String.valueOf(text.charAt(i)), px);
+
+            }
+
+        }
+
+        str.append("</center></html>");
+
+        return str.toString();
+
+
+
+    }
+
+    public static int calcMonospacedWidth(String s, int px) {
+
+        double r = 0;
+
+        for(int i=0; i<s.length(); ++i) {
+
+            if(Character.isIdeographic(s.codePointAt(i))) {
+                r += (double)px * 0.93333D;
+            }
+            else {
+                r += (double)px * 0.6D;
+            }
+
+        }
+
+        return (int)Math.round(r);
 
     }
 }

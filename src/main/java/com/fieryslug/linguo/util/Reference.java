@@ -1,6 +1,8 @@
 package com.fieryslug.linguo.util;
 
 import javax.imageio.ImageIO;
+import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 import java.io.IOException;
 
@@ -41,9 +43,25 @@ public class Reference {
     public static final Color PINK = new Color(226, 37, 195);
     public static final Color RED = new Color(227, 81, 83);
     public static final Color DARK_GREEN = new Color(43, 127, 94);
+    public static final Color LIGHT_BLUE = new Color(144, 216, 200);
+
+    public static final Color GRADIENT1 = new Color(0, 252, 255);
+    public static final Color GRADIENT2 = new Color(0, 255, 178);
+    public static final Color GRADIENT3 = new Color(0, 255, 102);
+    public static final Color GRADIENT4 = new Color(0, 255, 25);
+    public static final Color GRADIENT5 = new Color(51, 255, 0);
+    public static final Color GRADIENT6 = new Color(128, 255, 0);
+    public static final Color GRADIENT7 = new Color(204, 255, 0);
+    public static final Color GRADIENT8 = new Color(255, 230, 0);
+    public static final Color GRADIENT9 = new Color(255, 153, 0);
+    public static final Color GRADIENT10 = new Color(255, 77, 0);
+    public static final Color GRADIENT[] = {GRADIENT1, GRADIENT2, GRADIENT3, GRADIENT4, GRADIENT5, GRADIENT6, GRADIENT7, GRADIENT8, GRADIENT9, GRADIENT10};
+
 
     public static final Color TRANSPARENT = new Color(0, 0, 0, 0);
 
+    public static final Border BORDER_FIELD = BorderFactory.createBevelBorder(0, new Color(214, 183, 119), new Color(255, 166, 36));
+    public static final int MAX = 10;
 
     //public static final Font CUSTOM = Font.createFont();
 
