@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Linguo:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/Linguo_jar2</output-path>
+    <root id="archive" name="Linguo.jar">
+      <element id="module-output" name="Linguo" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/tablelayout.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/commons-io-2.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/json-20180130.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
