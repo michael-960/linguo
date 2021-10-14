@@ -7,12 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2480623-838f-442e-933c-bd9ca14623fa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fieryslug/linguo/util/listener/DeadKeyListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fieryslug/linguo/util/Colors.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fieryslug/linguo/panel/PanelAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fieryslug/linguo/panel/PanelAdd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fieryslug/linguo/panel/PanelGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fieryslug/linguo/panel/PanelGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fieryslug/linguo/util/FuncBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fieryslug/linguo/util/FuncBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fieryslug/linguo/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fieryslug/linguo/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fieryslug/linguo/panel/PanelGnome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fieryslug/linguo/panel/PanelGnome.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,10 +240,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537703809934" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -359,7 +358,8 @@
       <workItem from="1540218899116" duration="22000" />
       <workItem from="1561385049230" duration="1368000" />
       <workItem from="1561986665350" duration="1002000" />
-      <workItem from="1634192645910" duration="731000" />
+      <workItem from="1634192645910" duration="1263000" />
+      <workItem from="1634193928688" duration="2322000" />
     </task>
     <servers />
   </component>
@@ -441,6 +441,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

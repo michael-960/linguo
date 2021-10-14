@@ -1,5 +1,6 @@
 package com.fieryslug.linguo.panel;
 
+import com.fieryslug.linguo.util.Colors;
 import com.fieryslug.linguo.util.FuncBox;
 import com.fieryslug.linguo.util.Reference;
 
@@ -20,6 +21,8 @@ public class PanelGnome extends PanelRoot {
                 graphics.drawImage(Reference.BG_GNOME_SMALL, 0, 0, this);
             }
         };
+        //this.panelInterior.setBackground(Colors.GREEN);
+        //this.setBackground(Colors.LIME);
         this.panelInterior.setLayout(new FlowLayout(FlowLayout.CENTER));
         this.panelInterior.setPreferredSize(new Dimension(Reference.PANEL_INTERIOR_WIDTH, Reference.PANEL_INTERIOR_HEIGHT));
         this.add(this.panelInterior);

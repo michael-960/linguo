@@ -59,8 +59,11 @@ public class MainFrame extends JFrame {
 
 	    this.panelMaster = new PanelMaster();
 
-	    this.getContentPane().add(this.panelMenu);
-	    this.panelMenu.enter(this);
+	    //this.getContentPane().add(this.panelMenu);
+	    //this.panelMenu.enter(this);
+        this.panelMaster.setIndices(-1, -1, -1, -1);
+        this.getContentPane().add(this.panelMaster);
+        this.panelMaster.enter(this);
 
 
 
