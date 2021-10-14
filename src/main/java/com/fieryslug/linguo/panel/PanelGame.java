@@ -3,6 +3,7 @@ package com.fieryslug.linguo.panel;
 import com.fieryslug.linguo.MainFrame;
 import com.fieryslug.linguo.util.Config;
 import com.fieryslug.linguo.util.alma.Carta;
+import com.fieryslug.linguo.util.listener.DeadKeyListener;
 import com.fieryslug.linguo.widget.ButtonSlug;
 import com.fieryslug.linguo.util.FuncBox;
 import com.fieryslug.linguo.util.Reference;
@@ -96,6 +97,7 @@ public class PanelGame extends PanelGnome {
                 PanelGame.this.next();
             }
         });
+        this.fieldMatch.addKeyListener(new DeadKeyListener(this.fieldMatch));
 
         this.panelSide = new JPanel();
         this.panelSide.setPreferredSize(new Dimension(Reference.PANEL_SIDE_WIDTH, Reference.PANEL_SIDE_HEIGHT));
@@ -210,7 +212,14 @@ public class PanelGame extends PanelGnome {
         if(this.stage == 0) {
             this.stage = 1;
             this.fieldMatch.setEditable(false);
-            boolean b = this.currCarta.compare(this.fieldMatch.getText());
+            String text = this.fieldMatch.getText();
+            if(text.startsWith(":")) {
+                if(text.equals(":exit")) {
+                    this.buttonBack.doClick();
+                }
+            }
+
+            boolean b = this.currCarta.compare(text);
             int correctCount = this.countCorrect.get(this.currCarta);
             if(Config.mode == 0) {
                 System.out.println(this.fieldMatch.getText());

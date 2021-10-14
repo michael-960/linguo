@@ -38,6 +38,7 @@ public class FuncBox {
         jFrame.validate();
 
 
+
     }
 
     public static void switchFromPanelAdd(MainFrame jFrame) {

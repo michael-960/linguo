@@ -8,6 +8,7 @@ import com.fieryslug.linguo.util.alma.Carta;
 import com.fieryslug.linguo.util.alma.Deck;
 import com.fieryslug.linguo.util.alma.Group;
 import com.fieryslug.linguo.util.alma.Topic;
+import com.fieryslug.linguo.util.listener.DeadKeyListener;
 
 import javax.print.DocFlavor;
 import javax.swing.*;
@@ -72,6 +73,7 @@ public class PanelAdd extends PanelGnome {
                 }
             }
         });
+        this.fieldTopic.addKeyListener(new DeadKeyListener(this.fieldTopic));
 
         this.labelMatch = new JLabel("match", SwingConstants.CENTER);
         this.labelMatch.setPreferredSize(new Dimension(Reference.LABEL_TITLE_WIDTH, Reference.LABEL_TITLE_HEIGHT));
@@ -92,6 +94,7 @@ public class PanelAdd extends PanelGnome {
                 buttonConfirm.doClick();
             }
         });
+        this.fieldMatch.addKeyListener(new DeadKeyListener(this.fieldMatch));
 
         this.buttonBack = new JButton();
         this.buttonBack.setIcon(new ImageIcon(Reference.BUTTON_BACK));
