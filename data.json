@@ -756,5 +756,333 @@
             }],
             "title": "grammar"
         }]
+    },
+    {
+        "topic": "folksongs_2022",
+        "groups": [{
+            "decks": [
+                {
+                    "name": "7-lit.",
+                    "cartas": [
+                        {
+                            "match": "四句全情",
+                            "description": "不肯放君返"
+                        },
+                        {
+                            "match": "一景三情",
+                            "description": "做鬼欲找伊"
+                        },
+                        {
+                            "match": "二景二情",
+                            "description": "情騰密密纏"
+                        },
+                        {
+                            "match": "三景一情",
+                            "description": "欲沈沈落去"
+                        },
+                        {
+                            "match": "四句全景",
+                            "description": "玉蘭花"
+                        },
+                        {
+                            "match": "百家春",
+                            "description": "起興 對比 深閨自怨"
+                        },
+                        {
+                            "match": "思想起",
+                            "description": "起興 引喻 虛字襯詞 追憶舊情"
+                        },
+                        {
+                            "match": "兒歌",
+                            "description": "鯽仔魚欲娶某"
+                        },
+                        {
+                            "match": "兒歌",
+                            "description": "月娘勿受氣"
+                        },
+                        {
+                            "match": "菅芒花",
+                            "description": "擬人、對仗、對比"
+                        },
+                        {
+                            "match": "秋天的思念",
+                            "description": "轉借、疊字詞 四季愛情詩歌"
+                        },
+                        {
+                            "match": "上美的花",
+                            "description": "聖地牙哥 Rocky Canyon"
+                        }
+                    ]
+                },
+                {
+                    "name": "8-niños",
+                    "cartas": [
+                        {
+                            "match": "一人",
+                            "description": "放雞鴨"
+                        },
+                        {
+                            "match": "二人",
+                            "description": "挨呀挨呼呼"
+                        },
+                        {
+                            "match": "二人",
+                            "description": "一的炒米香"
+                        },
+                        {
+                            "match": "二人",
+                            "description": "打鐵哥"
+                        },
+                        {
+                            "match": "三人以上",
+                            "description": "點仔點水缸"
+                        },
+                        {
+                            "match": "三人以上",
+                            "description": "掩咯雞"
+                        },
+                        {
+                            "match": "三人以上",
+                            "description": "你欲吃清或欲吃濁"
+                        },
+                        {
+                            "match": "聯想歌",
+                            "description": "天黑黑"
+                        },
+                        {
+                            "match": "聯想歌",
+                            "description": "白鷺鷥"
+                        },
+                        {
+                            "match": "聯想歌",
+                            "description": "火金姑"
+                        },
+                        {
+                            "match": "聯想歌",
+                            "description": "月娘別生氣"
+                        },
+                        {
+                            "match": "聯想歌",
+                            "description": "鯽仔魚欲娶某"
+                        },
+                        {
+                            "match": "趣味歌",
+                            "description": "ABC狗咬豬"
+                        },
+                        {
+                            "match": "趣味歌",
+                            "description": "大頭旺仔一粒珠"
+                        },
+                        {
+                            "match": "敘述歌",
+                            "description": "一年仔悾悾"
+                        },
+                        {
+                            "match": "敘述歌",
+                            "description": "台灣是寶島"
+                        },
+                        {
+                            "match": "敘述歌",
+                            "description": "十二生肖歌"
+                        },
+                        {
+                            "match": "勵志歌",
+                            "description": "小蚼蟻"
+                        },
+                        {
+                            "match": "勵志歌",
+                            "description": "咱愛台灣是咱兜"
+                        },
+                        {
+                            "match": "勵志歌",
+                            "description": "一隻牛仔"
+                        },
+                        {
+                            "match": "勵志歌",
+                            "description": "小鮭魚"
+                        },
+                        {
+                            "match": "猜謎歌",
+                            "description": "予你臆勿著"
+                        },
+                        {
+                            "match": "猜謎歌",
+                            "description": "臆水底的物件"
+                        },
+                        {
+                            "match": "搖籃歌",
+                            "description": "搖荖搖"
+                        },
+                        {
+                            "match": "搖籃歌",
+                            "description": "搖子賢大漢"
+                        },
+                        {
+                            "match": "搖籃歌",
+                            "description": "嬰仔睏"
+                        }
+                    ]
+                },
+                {
+                    "name": "9-drama",
+                    "cartas": [
+                        {
+                            "match": "歌舞小戲",
+                            "description": "民謠＋肢體動作"
+                        },
+                        {
+                            "match": "唸歌",
+                            "description": "民謠曲調＋故事劇本、唱詞"
+                        },
+                        {
+                            "match": "戲曲",
+                            "description": "民謠（民謠曲調）＋ 肢體動作（舞蹈）＋ 故事劇本、唱詞（文學）"
+                        },
+                        {
+                            "match": "月琴",
+                            "description": "伴奏樂器 月_"
+                        },
+                        {
+                            "match": "大筒弦",
+                            "description": "伴奏樂器 大__"
+                        },
+                        {
+                            "match": "戲目",
+                            "description": "呂蒙正"
+                        },
+                        {
+                            "match": "戲目",
+                            "description": "陳三五娘"
+                        },
+                        {
+                            "match": "戲目",
+                            "description": "山伯英台"
+                        },
+                        {
+                            "match": "戲目",
+                            "description": "什細記"
+                        },
+                        {
+                            "match": "電影歌仔戲",
+                            "description": "薛平貴與王寶釧"
+                        },
+                        {
+                            "match": "電影歌仔戲",
+                            "description": "身騎白馬"
+                        },
+                        {
+                            "match": "電視歌仔戲",
+                            "description": "楊麗花的「天馬歌劇團」"
+                        },
+                        {
+                            "match": "金光歌仔戲",
+                            "description": "以現代聲光科技，著重舞台佈景及機關技術 節奏明快的手法"
+                        },
+                        {
+                            "match": "精緻歌仔戲",
+                            "description": "1980年代台灣鄉土意識的興起"
+                        },
+                        {
+                            "match": "內台歌仔戲",
+                            "description": "劇本加長，成連續劇形式 室內演出"
+                        },
+                        {
+                            "match": "外台歌仔戲",
+                            "description": "酬神、祭祀、賽會活動"
+                        },
+                        {
+                            "match": "曲調",
+                            "description": "牛犁歌"
+                        },
+                        {
+                            "match": "曲調",
+                            "description": "駛犁歌調"
+                        },
+                        {
+                            "match": "曲調",
+                            "description": "桃花過渡"
+                        },
+                        {
+                            "match": "曲調",
+                            "description": "病子歌"
+                        },
+                        {
+                            "match": "曲調",
+                            "description": "五更鼓"
+                        },
+                        {
+                            "match": "曲調",
+                            "description": "車鼓歌"
+                        },
+                        {
+                            "match": "本地歌仔",
+                            "description": "日常生活 僅生、旦、丑，唱多白少"
+                        }
+                    ]
+                },
+                {
+                    "name": "10-history",
+                    "cartas": [
+                        {
+                            "match": "1920",
+                            "description": "台灣自治歌"
+                        },
+                        {
+                            "match": "1930",
+                            "description": "桃花泣血記"
+                        },
+                        {
+                            "match": "文明時代",
+                            "description": "四季紅"
+                        },
+                        {
+                            "match": "戰後",
+                            "description": "杯底嘸通飼金魚"
+                        },
+                        {
+                            "match": "戰後",
+                            "description": "望你早歸"
+                        },
+                        {
+                            "match": "戰後",
+                            "description": "補破網"
+                        },
+                        {
+                            "match": "戰後",
+                            "description": "燒肉粽"
+                        },
+                        {
+                            "match": "戰後",
+                            "description": "南都之夜"
+                        },
+                        {
+                            "match": "戰後",
+                            "description": "台灣小調"
+                        },
+                        {
+                            "match": "割讓台灣",
+                            "description": "一隻鳥仔哮救救"
+                        },
+                        {
+                            "match": "割讓台灣",
+                            "description": "杏仁茶\u2022油炸粿"
+                        },
+                        {
+                            "match": "割讓台灣",
+                            "description": "人插花\u2022伊插草"
+                        },
+                        {
+                            "match": "清朝",
+                            "description": "鴨母王"
+                        }
+                    ]
+                }
+            ],
+            "title": "folksongs"
+        }]
+    },
+    {
+        "topic": "",
+        "groups": []
     }
 ]
